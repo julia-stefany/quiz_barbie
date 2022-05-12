@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Apresentacao from "./Apresentacao.js";
+
+
+//import Quiz from "./Quiz.js";
+
 
 function App() {
+  const [ tela, alteraTela ] = React.useState( null );
+  //altera_tela( <Quiz/> )
+
+  if( tela == null ){
+
+    alteraTela( <Apresentacao alteraTela={alteraTela} /> )
+
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+
+      { tela }
+
     </div>
+
   );
 }
-
 export default App;

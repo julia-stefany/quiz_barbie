@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital@1&family=Tapestry&display=swap');
+
+
+.TelaP{
+
+    background:pink;
+    justify-content:space-between;
+    text-align: center;
+    padding:23px;
+    font-size: 23px;
+    font-family:'Archivo Narrow', sans-serif;
+    width: 100%;  
+}
+
+.h1{
+    
+    font-family: 'Tapestry', cursive; ;
+
+}
+
+
+
+.botao{
+    
+    padding: 10px 30px;
+    border-radius: 7px;
+    border: none;
+    background: palevioletred;
+    color: black
+
+  }
